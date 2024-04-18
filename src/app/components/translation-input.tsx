@@ -1,10 +1,14 @@
 "use client";
-import { useState } from 'react';
+import { useState, FC } from 'react';
 
-function TranslationInput({ onTranslate }) {
+interface TranslationInputProps {
+  onTranslate: (text: string) => void;
+}
+
+const TranslationInput: FC<TranslationInputProps> = ({ onTranslate }) => {
     const [text, setText] = useState('');
   
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       onTranslate(text);
     };
