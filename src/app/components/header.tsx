@@ -28,8 +28,8 @@ const Header = () => {
             </button>
           </div>
 
-          <a href="#"  className="text-sm font-semibold leading-6 text-gray-900">Get API Key</a>
-          <a href="#"  className="text-sm font-semibold leading-6 text-gray-900">GitHub</a>
+          <a href="#"  className="text-sm font-semibold leading-6 text-gray-900">API Key авах</a>
+          <a href="https://github.com/T0mY0/translate" className="text-sm font-semibold leading-6 text-gray-900">GitHub</a>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {/* <a href="#"  className="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> */}

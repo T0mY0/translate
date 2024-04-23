@@ -16,6 +16,7 @@ function TranslationDisplay({ translatedText }: TranslationDisplayProps) {
           style={{ background: '#f3f3f3', border: '1px solid #ccc' }}
           rows={4}
           value={translatedText}
+          placeholder="Орчуулга"
           readOnly
         ></textarea>
       </div>

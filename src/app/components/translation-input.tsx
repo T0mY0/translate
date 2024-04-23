@@ -17,9 +17,9 @@ const TranslationInput: FC<TranslationInputProps> = ({ onTranslate }) => {
       <div>
         <form onSubmit={handleSubmit} className="mb-4">
           <textarea
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 min-h-[250px] leading-tight focus:outline-none focus:shadow-outline resize-none"
+            className="shadow appearance-none border rounded w-full py-4 pl-6 pr-8 text-gray-700 mb-3 min-h-[250px] leading-tight focus:outline-none focus:shadow-outline resize-none"
             rows={4}
-            placeholder="Text to translate"
+            placeholder="Орчуулах үгсээ бичнэ үү"
             value={text}
             onChange={(e) => setText(e.target.value)}
           ></textarea>
@@ -27,7 +27,7 @@ const TranslationInput: FC<TranslationInputProps> = ({ onTranslate }) => {
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
-            Translate
+            Орчуулах
           </button>
         </form>
       </div>
