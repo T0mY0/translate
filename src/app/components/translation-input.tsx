@@ -17,7 +17,7 @@ const TranslationInput: FC<TranslationInputProps> = ({ onTranslate }) => {
       <div>
         <form onSubmit={handleSubmit} className="mb-4">
           <textarea
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 min-h-[250px] leading-tight focus:outline-none focus:shadow-outline resize-none"
             rows={4}
             placeholder="Text to translate"
             value={text}
