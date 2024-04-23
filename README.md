@@ -1,10 +1,9 @@
 # TomYo Translate
 
-TomYo's service, offered free of charge, instantly translates words, phrases between English and Mongolian.
+TomYo Translate нь англи - монгол хэлний хооронд үгс, хэллэгүүдийг орчуулах боломжийг олгодог онлайн орчуулгын хэрэгсэл юм.
+Та өөрийн аппликэйшн болон системдээ API интеграци хийн ашиглах бүрэн боломжтой.
 
-## API Examples
-
-### Simple
+## API ашиглах жишээ
 
 Request:
 

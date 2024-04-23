@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "TomYo Translate",
-  description: "TomYo's service, offered free of charge, instantly translates words, phrases between English and Mongolian.",
+  description: "TomYo Translate нь англи - монгол хэлний хооронд үгс, хэллэгүүдийг орчуулах боломжийг олгодог онлайн орчуулгын хэрэгсэл юм.",
 };
 
 export default function RootLayout({
