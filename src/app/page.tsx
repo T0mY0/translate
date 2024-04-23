@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "./components/header";
 import TranslationInput from "./components/translation-input";
 import TranslationDisplay from "./components/translation-display";
+import CodeExample from "./components/code-example";
 
 export default function Home() {
   const [translatedText, setTranslatedText] = useState('');
@@ -31,15 +32,12 @@ export default function Home() {
     <>
       <Header />
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        </div>
-
-        <div className="relative flex md:gap-x-4 grid sm:grid-cols-2">
+        <div className="relative flex md:gap-x-4 grid sm:grid-cols-2 py-4 overflow-auto">
           <TranslationInput onTranslate={handleOnTranslate} />
           <TranslationDisplay loading={loading} translatedText={translatedText} />
         </div>
-
-        <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+        <div className="relative flex md:gap-x-4 grid sm:grid-cols-2 py-4">
+          <CodeExample />
         </div>
       </main>
     </>

@@ -3,6 +3,7 @@ import React from 'react';
 
 interface TranslationDisplayProps {
   translatedText: string;
+  loading: boolean;
 }
 
 function TranslationDisplay({ loading, translatedText }: TranslationDisplayProps) {
