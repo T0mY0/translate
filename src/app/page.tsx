@@ -7,8 +7,10 @@ import TranslationDisplay from "./components/translation-display";
 
 export default function Home() {
   const [translatedText, setTranslatedText] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleOnTranslate = async (text: string) => {
+    setLoading(true);
     // submit text to translate API
     console.warn('source text: ', text);
     const response = await fetch('/api/translate', {
@@ -22,6 +24,7 @@ export default function Home() {
     const data = await response.json();
     console.warn('translated text: ', data);
     setTranslatedText(data.message);
+    setLoading(false);
   }
 
   return (
@@ -33,7 +36,7 @@ export default function Home() {
 
         <div className="relative flex md:gap-x-4 grid sm:grid-cols-2">
           <TranslationInput onTranslate={handleOnTranslate} />
-          <TranslationDisplay translatedText={translatedText} />
+          <TranslationDisplay loading={loading} translatedText={translatedText} />
         </div>
 
         <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
