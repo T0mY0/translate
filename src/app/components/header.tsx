@@ -2,14 +2,15 @@
 
 import Image from "next/image";
 import logo from "../../assets/images/logo-white.png";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#"  className="-m-1.5 p-1.5">
-            <span  className="sr-only">Your Company</span>
+          <a href="/"  className="-m-1.5 p-1.5">
+            <span  className="sr-only">TomYo translate</span>
             <img className="h-8 w-auto" src="https://www.tomyo.mn/wp-content/uploads/2023/10/TOMYO-LOGO-H.png" alt="TomYo" />
           </a>
         </div>
@@ -22,17 +23,12 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <div className="relative">
-            <button type="button"  className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
-              API Docs
-            </button>
-          </div>
-
-          <a href="#"  className="text-sm font-semibold leading-6 text-gray-900">API Key авах</a>
-          <a href="https://github.com/T0mY0/translate" className="text-sm font-semibold leading-6 text-gray-900">GitHub</a>
+          <a href="https://api.translate.tomyo.io/docs"  className="text-sm font-semibold leading-6 text-gray-900">API Docs</a>
+          <Link href="/showcase"  className="text-sm font-semibold leading-6 text-gray-900">Хэрхэн хэрэглэгдэж болох вэ</Link>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {/* <a href="#"  className="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> */}
+          <a href="https://github.com/T0mY0/translate" className="text-sm font-semibold leading-6 text-gray-900"><Image src={`/github.svg`} width={24} height={24} alt="Github" /></a>
         </div>
       </nav>
       {/* <div className="lg:hidden" role="dialog" aria-modal="true">
