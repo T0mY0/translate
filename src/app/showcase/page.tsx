@@ -14,7 +14,7 @@ const Showcase = () => {
       name: 'Чатбот',
       description: 'ChatGPT (GPT4, Claude 3, Mistral) зэрэг LLM -г эх хэл дээрээ ашиглах боломжтой',
       imageUrl: '/usecase/chatbot.png',
-      link: 'https://www.chatbotui.com/'
+      link: 'https://chatbot.tomyo.mn/'
     },
     {
       name: 'Онлайн худалдаа (dropshipping)',
