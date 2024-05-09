@@ -30,4 +30,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .container {
+    @apply mx-auto
+      max-w-screen-xl
+      px-5
+      md:px-10
+      lg:px-10
+      xl:px-10
+      2xl:px-0;
+  }
 }
