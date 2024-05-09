@@ -23,8 +23,8 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="https://translate.tomyo.io"  className="text-sm font-semibold leading-6 text-gray-900">Нүүр</a>
-          <Link href="/showcase"  className="text-sm font-semibold leading-6 text-gray-900">Хэрхэн хэрэглэгдэж болох вэ</Link>
+          <a href="https://translate.tomyo.io"  className="text-sm font-semibold leading-6 text-gray-900">Home</a>
+          <Link href="/showcase"  className="text-sm font-semibold leading-6 text-gray-900">Showcase</Link>
           <a href="https://api.translate.tomyo.io/docs"  className="text-sm font-semibold leading-6 text-gray-900">API Docs</a>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
