@@ -34,7 +34,7 @@ console.log(await res.json());
     <>
       <div>
         <p className="mb-0">Request</p>
-        <pre className="border rounded w-full py-4 pl-6 pr-8 text-gray-700 mb-3 min-h-[250px]">
+        <pre className="border rounded max-w-[360px] md:max-w-full overflow-auto py-4 pl-6 pr-8 text-gray-700 mb-3 min-h-[250px]">
           <code className="language-js">
             {code}
           </code>
@@ -42,7 +42,7 @@ console.log(await res.json());
       </div>
       <div>
         <p className="mb-0">Response</p>
-        <pre className="border rounded w-full py-4 pl-6 pr-8 text-gray-700 mb-3 min-h-[250px]">
+        <pre className="border rounded max-w-[360px] md:max-w-full overflow-auto py-4 pl-6 pr-8 text-gray-700 mb-3 min-h-[250px]">
           <code className="language-json">
             {response}
           </code>
