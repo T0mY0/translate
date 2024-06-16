@@ -1,0 +1,25 @@
+#! /bin/bash
+
+set -e # exit if any commands returns a non-zero exit code.
+
+cd "$(dirname "$0")/.."
+
+## Build frontend assets
+echo 'Building assets...'
+yarn install
+yarn build
+echo 'Frontend assets has been built !'
+
+## Build binary
+echo 'Building deployment artifact...'
+tar \
+    -czf deployment_artifact.tar.gz \
+    .next \
+    node_modules \
+    public \
+    .env \
+    package.json \
+    README.md \
+    yarn.lock
+
+echo 'Deployment artifact has been built successfully !'
