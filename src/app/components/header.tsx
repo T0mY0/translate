@@ -10,7 +10,7 @@ const Header = () => {
     <header className="bg-white sticky z-50 top-0">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="https://translate.tomyo.io" className="-m-1.5 p-1.5">
+          <a href="https://translate.tomyo.mn" className="-m-1.5 p-1.5">
             <span className="sr-only">TomYo translate</span>
             <img className="h-8 w-auto" src="https://www.tomyo.mn/wp-content/uploads/2023/10/TOMYO-LOGO-H.png" alt="TomYo" />
           </a>
@@ -24,9 +24,9 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="https://translate.tomyo.io" className="text-sm font-semibold leading-6 text-gray-900">Home</a>
+          <a href="https://translate.tomyo.mn" className="text-sm font-semibold leading-6 text-gray-900">Home</a>
           <Link href="/showcase" className="text-sm font-semibold leading-6 text-gray-900">Showcase</Link>
-          <a href="https://api.translate.tomyo.io/docs" className="text-sm font-semibold leading-6 text-gray-900">API Docs</a>
+          <a href="https://api.translate.tomyo.mn/docs" className="text-sm font-semibold leading-6 text-gray-900">API Docs</a>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {/* <a href="#"  className="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> */}
@@ -42,7 +42,7 @@ const Header = () => {
               Home
             </Link>
             <Link href="/showcase" className="leading-6 text-gray-900 px-3 py-2 text-base font-medium block">Showcase</Link>
-            <a href="https://api.translate.tomyo.io/docs" className="leading-6 text-gray-900 px-3 py-2 text-base font-medium block">API Docs</a>
+            <a href="https://api.translate.tomyo.mn/docs" className="leading-6 text-gray-900 px-3 py-2 text-base font-medium block">API Docs</a>
           </div>
         </div>
       )}

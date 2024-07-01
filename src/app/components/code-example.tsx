@@ -13,7 +13,7 @@ function CodeExample() {
   }, [])
 
   const code = `
-const res = await fetch("https://api.translate.tomyo.io/predict", {
+const res = await fetch("https://api.translate.tomyo.mn/predict", {
   method: "POST",
   body: JSON.stringify({
     text: "Hello my friends",

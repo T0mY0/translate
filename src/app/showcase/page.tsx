@@ -9,7 +9,7 @@ const Showcase = () => {
       name: 'Мэдээний портал',
       description: 'Гаднын эх сурвалжийн мэдээллийг цаг алдалгүй хэрэглэгчдэдээ эх хэлээрээ хүргэх боломжтой',
       imageUrl: '/usecase/newsfeed.png',
-      link: 'https://newsfeed.tomyo.io'
+      link: 'https://newsfeed.tomyo.mn'
     },
     {
       name: 'Чатбот',
@@ -27,7 +27,7 @@ const Showcase = () => {
       name: 'Таны бизнес хэрэгцээнд',
       description: 'Та өөрийн бизнес хэрэгцээнд нэвтрүүлэх сонирхолтой байгаа бол бидэнтэй холбогдоно уу',
       imageUrl: '/usecase/business.jpg',
-      link: 'mailto:hello@tomyo.io'
+      link: 'mailto:hello@tomyo.mn'
     },
   ];
 
